@@ -1,0 +1,41 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav part starts here */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 60px;
+    padding: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #3A3A3A;
+}
+
+nav li {
+    list-style: none;
+}
+
+.nav-head {
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.list {
+    display: flex;
+    gap: 20px;
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+
+@media  screen and (max-width:576px) {
+    nav{
+        flex-direction: column;
+    }
+}
