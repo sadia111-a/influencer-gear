@@ -70,18 +70,44 @@ border: 0px;
     background-repeat: no-repeat;
     background-size: contain;
 }
+/* logo part starts here */
+.logo-section{
+   margin-top: 100px;
+}
+.logo-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 25px;
+    border: 1px dotted grey;
+    border-radius: 5px;
+}
 
-
+/* responsive media query */
 @media  screen and (max-width:576px) {
-    nav{
+    .nav-container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
     .banner-container{
         flex-direction: column-reverse;
         justify-content: center;
         text-align: center;
+    }
+    .logo-container{
+        flex-wrap: wrap;
+        /* width: 79%; */
+        gap: 9px;
+        justify-content: space-around;
+    }
+    .logo-section{
+        align-items: center;
+        justify-content: center;
+
     }
 }
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -94,5 +120,12 @@ border: 0px;
         flex-direction: column-reverse;
         justify-content: center;
         text-align: center;
+    }
+    .logo-container{
+        flex-wrap: wrap;
+        width: 79%;
+        gap: 9px;
+        justify-content: space-around;
+        align-items: center;
     }
 }
